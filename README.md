@@ -14,4 +14,4 @@ def dummy_kernel(x):
 
 ```graph_captured_nvtx_range``` will insert nvtx range node if under graph capturing or mark nvtx range normally if not under capturing.
 
-* Graph capture awared nvtx will significantly increase your runtime overhead so this repo is for debugging purpose only.*
+*Graph capture awared nvtx will significantly increase your runtime overhead so this repo is for debugging purpose only.*
