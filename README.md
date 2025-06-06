@@ -1,6 +1,6 @@
 # nvtx-cuda-graph
 
-An enhanced NVTX extension that lets you insert NVTX push/pop ranges not only normally but also into a CUDA Graph capture.
+An enhanced NVTX extension that lets you insert NVTX push/pop ranges not only normally but also into a CUDA Graph capture. The range push/pop will automatically decorate your nsys report during graph replay.
 
 Usage:
 
@@ -13,3 +13,5 @@ def dummy_kernel(x):
 ```
 
 ```graph_captured_nvtx_range``` will insert nvtx range node if under graph capturing or mark nvtx range normally if not under capturing.
+
+* Graph capture awared nvtx will significantly increase your runtime overhead so this repo is for debugging purpose only.*
